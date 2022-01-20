@@ -1,0 +1,23 @@
+url
+name: Simple (Live)
+format: simple
+address: http://users.csc.calpoly.edu/~akeen/courses/csc305/simple.json
+filter:
+delay: 10
+
+url
+name: NewsAPI Headlines (Live)
+format: newsapi
+address: http://newsapi.org/v2/top-headlines?country=us&apiKey=3ed17653b06c4bcf8419c5b98eb9d001
+filter:
+delay:30
+
+
+file
+name: NewsAPI Fixed
+format: newsapi
+location: inputs/newsapi.json
+filter: Harris & ( washingtonpost | usatoday )
+
+
+
