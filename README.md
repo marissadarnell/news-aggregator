@@ -17,4 +17,6 @@ For "live" sources, a delay can be specified and the source will be queried once
 
 This program supports concurrently (and repeatedly) retreiving articles by giving each specified news source a `Runnable`.  
 A `BlockingQueue` is used to print the retreived articles without interleaving each article's output.  
-The ANTLR library is used to parse the filtering expressions and the Visitor pattern is implemented to evaluate the filtering expressions.
+The org.json library is used to parse the json response from each news source.  
+The ANTLR library is used to parse the filtering expressions and the Visitor pattern is implemented to evaluate the filtering expressions.  
+
